@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title> REGISTRATION FORM WITH VALIDATION </title>
+
+    <link rel ="stylesheet" href="style2.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <h3> Registration Form </h3> 
+    
+</head>
+<body>
+<script src="main2.js"></script>    
+ </head>
+
+<body>
+    <div class="container">
+    <div class="input-control">
+     </div>    
+    <div class="content">
+        <div class="logo">
+        <img src="logo.svg" alt=""/>
+    </div>
+
+    <div class="imgage">
+        <img src="illustration.svg" alt="" />
+    </div>
+    <div class="text">
+            Start for free & Get <br/> 
+            Attractive offers Today !
+        </div>
+    </div>
+    
+<form id="form">
+<div class="social">
+<div class="title"> Get Started </div>
+    <div class="question">
+    Already have an Account? <br/>
+    <span> Sign In</span>
+</div>
+
+<div class="btn">
+<div class="btn-1">
+  <img src="https://img.icons8.com/color/30/000000/google-logo.png"/>
+  Sign Up
+ </div>
+
+<div class="btn-2">
+ <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png"/>
+  Sign Up
+</div>
+</div>
+
+<div class="or">OR</div>
+
+
+    <!-- /**
+    * !--user name Enter here 
+    **/ -->
+    
+    <div>
+        <div class="input-control">
+        <label for="usename">User Name</label>
+       <i class="fa fa-user-circle" aria-hidden="true"></i>
+        <input 
+        name="username" 
+        id="usename"
+        placeholder="Vaishali Bhosle"
+        typye="text" required />
+
+        
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="error"></div>   
+    </div>
+
+    <!-- /**
+    *!--user Email Enter here 
+    **/ -->
+        <div>
+        <div class="input-control">
+        <label for="email">Email</label>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        
+        <input 
+        type="email"
+         name="email" 
+         id="email" 
+         placeholder="xyz@gamil.com"/>
+
+        <i class="fa-sharp fa-solid fa-circle-exclamation failure-icon"></i>
+        <i class="fa-sharp fa-solid fa-square-check success-icon"></i>
+        <div class="error"></div>  
+    </div>
+
+    <!-- /**
+    *!--user Password Enter here 
+    **/ -->
+
+    <form id="form" onsubmit="return Validpassword() "action="newHTML.html" method="post">
+    <div>
+        <label for="password">Password</label>
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        
+        <input 
+        type="password" 
+        name="password"
+        id="password"
+        placeholder="Password here"/>
+
+        <i class="fa-sharp fa-solid fa-circle-exclamation failure-icon"></i>
+        <i class="fa-sharp fa-solid fa-square-check success-icon"></i>
+        <div class="error"></div>  
+    </div>
+</form>
+
+   <!--/    **->> User Gender
+
+    <div>
+      <div class="Gender">
+
+       <label><input type="radio" id="Gender"name="r1"/>Male
+       <input type="radio" id="Female"name="r1"/> 
+       <label style="margin-right: 90px">Female </label>
+
+     </div>
+          
+    </div> -->
+       
+
+    <!--*!--user DOB Enter here 
+    **/ -->
+ 
+    <div>
+   <label for="DOB">Birth Date</label>
+   <!--<i class="fa fa-calendar-o" aria-hidden="true"></i> -->
+
+    <input 
+    type="date" 
+    id="DOB" name="DOB" 
+    placeholder="DOB"/>
+    <div class="error"></div>  
+ 
+    <!-- Enter your Mobile Number-->
+
+    <div>
+        <label for="phone">Mobile Number</label>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        
+        <input 
+        type="tel"
+        name="phone" 
+        id="phone"
+        placeholder=" Enter your phone number">
+        
+        <i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+        <i class="fa-sharp fa-solid fa-square-check"></i>
+        <span id="phone-error" class="error"></span>
+    </div>
+   
+   <button type="submit" id="submit"> SUBMIT </button>
+
+</form>
+</div>
+</body>
+
+<html>
